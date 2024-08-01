@@ -1,6 +1,10 @@
-def test_fun(a):
+def test_fun(number: int  | float = 1, name: str='Ivan') -> str:
+    name = name.capitalize()
+    print(f"Good test number:{number} \nDear {name} XD")
+    return "Sucsessful"
 
-    print("Good test", a)
+def another_some_function(number: int | float | complex=0) -> None:
+    pass
 
 print("Hellow my dear friend")
-test_fun("Vlad")
+print(test_fun(name="Vlad"))
