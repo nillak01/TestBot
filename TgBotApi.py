@@ -1,6 +1,6 @@
 import requests
 
-token = "7445355602:AAG7JbbH5l2YkUZ7j-q9erG0iVty4UJqXYY"
+token = ""
 api_url = f'https://api.telegram.org/bot{token}/getMe'
 
 # Прмер получения API
