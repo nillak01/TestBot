@@ -1,7 +1,11 @@
 import requests
+from tgData import token
 
-token = "7445355602:AAG7JbbH5l2YkUZ7j-q9erG0iVty4UJqXYY"
-api_url = f'https://api.telegram.org/bot{token}/getMe'
+
+chat_id = 637603487
+text = "Привет Ярик, у тебя получилось!"
+methodName = 'sendMessage?' + f"chat_id={chat_id}&" + f"text={text}"
+api_url = f'https://api.telegram.org/bot{token}/{methodName}'
 
 # Прмер получения API
 # https://api.telegram.org/bot<token>/METHOD_NAME
